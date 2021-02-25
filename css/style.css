@@ -383,6 +383,33 @@ a {
 .validation-list a:focus {
     color: red;
 } 
+/* 웹 관련 용어 */
+.term { 
+    border-radius: 10px;
+    border: #000;
+    background: linear-gradient(180deg, #ccc 0%, #eee 100%);
+    padding: 10px;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.term-heading {
+
+}
+.term-list-subject {    
+    color: blue;
+    display: inline-block;
+    font-size: 14px;
+    font
+    padding-bottom: 5px;
+}
+.term-list-thumbnail {  
+    float: left;
+    margin: 0 10px 10px 10px;
+}
+.term-list-brief {  
+    display: block;
+    font-size: 14px;
+}
 .slogan {
     background-color: lightgreen;
     height: 10vh;
