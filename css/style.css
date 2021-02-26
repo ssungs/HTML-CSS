@@ -3,7 +3,8 @@
 @import url(./normalize.css);
 
 /* 숨김 컨텐츠 */
-.a11y-hidden , legend {
+.a11y-hidden,
+legend {
     background-color: yellow;
     position: absolute;
     width: 1px;
@@ -30,7 +31,7 @@ body {
     font-weight: 300;
     font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     background: url(./images/bg_flower.png) no-repeat 50% 0,
-    linear-gradient(180deg, #ccc 0% ,#eee 30%, #fff 50%, #fff 100%) repeat;
+        linear-gradient(180deg, #ccc 0%, #eee 30%, #fff 50%, #fff 100%) repeat;
     background-color: #ccc;
 }
 
@@ -96,6 +97,7 @@ a {
     /* font-size: 14px;
     font-weight: 400; */
 }
+
 /* .member li:nth-child(n+2):before {    
     content: "|";
 } */
@@ -131,7 +133,7 @@ a {
     padding: 2px 20px 0;
     color: #fff;
     font-weight: 700;
-    text-shadow: 1px 1px 0 #000 -1px -1px 0 #000;
+    /* text-shadow: 1px 1px 0 #000 -1px -1px 0 #000; */
 }
 
 .menu-act .menu-item-button {
@@ -212,7 +214,7 @@ a {
         /* padding: 0; */
         /* top: 0;
         left: 0; */
-        transform: translate(0,0);
+        transform: translate(0, 0);
     }
 
     100% {
@@ -221,7 +223,7 @@ a {
         /* padding: 75px 0 0 400px; */
         /* top: 75px;
         left: 400px; */
-        transform: translate(400px,75px);
+        transform: translate(400px, 75px);
     }
 }
 
@@ -234,19 +236,24 @@ a {
     z-index: 10;
     /* display: inline-block; */
 }
-@keyframes bgAni {  
-    0%{
+
+@keyframes bgAni {
+    0% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
+
 .visual {
     height: 120px;
     position: relative;
 }
-.visual::before, .visual::after {   
+
+.visual::before,
+.visual::after {
     content: "";
     position: absolute;
     top: 0;
@@ -259,16 +266,19 @@ a {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-.visual::before{
+
+.visual::before {
     background-image: url(./images/ani_flower_01.png), url(./images/ani_flower_02.png);
     background-position: 1px -10px, 670px 0;
 
 }
-.visual::after {    
+
+.visual::after {
     background-image: url(./images/ani_flower_03.png), url(./images/ani_flower_04.png);
-    background-position: 300px 0,800px 0;
+    background-position: 300px 0, 800px 0;
     animation-delay: 1000ms;
 }
+
 /* 메인 컨텐츠 */
 .main {
     background-color: #fff;
@@ -294,49 +304,56 @@ a {
     /* background-color: sandybrown; */
     width: 190px;
 }
+
 /* 로그인 */
 .login {
     background: #ce4827 radial-gradient(circle at right top, #ea8800 0%, #ce4827 100%);
     /* background: radial-gradient(circle at right top, red,green); */
     border-radius: 5px;
     box-shadow: 5px 5px 0 #aaa;
-    padding: 10px; 
- }
+    padding: 10px;
+}
+
 .login-heading {
-    margin: 0px;   
+    margin: 0px;
     color: #ff0;
     font-size: 1.5rem;
     font-weight: 500;
     text-indent: 10px;
 }
-.login-form{    
+
+.login-form {
     background: #fff;
     border-radius: 5px 5px 0 0;
     padding: 10px 10px 0 10px;
     margin-top: 10px;
 }
 
-.login-form fieldset { 
+.login-form fieldset {
     padding: 0 0 10px 0;
     margin: 0;
-    border:0;
+    border: 0;
     position: relative;
-    border-bottom:1px solid #aaa;
+    border-bottom: 1px solid #aaa;
 }
-.user-pw {   
+
+.user-pw {
     margin-top: 6px;
 }
-.login-form label { 
+
+.login-form label {
     display: inline-block;
     width: 50px;
 }
-.login-form input { 
+
+.login-form input {
     padding: 1px 1px 1px 5px;
     border: 1px solid #aaa;
     width: 90px;
     height: 22px;
 }
-.btn-login{
+
+.btn-login {
     position: absolute;
     top: 0;
     right: 0;
@@ -348,7 +365,8 @@ a {
     height: 50px;
     border-radius: 5px;
 }
-.member-service {   
+
+.member-service {
     background-color: #fff;
     padding: 5px 10px;
     margin: 0;
@@ -357,58 +375,95 @@ a {
     display: flex;
     justify-content: space-between;
 }
-.member-service a{  
+
+.member-service a {
     display: inline-block;
     padding: 5px 0;
 }
-.member-service .icon-right-open {  
+
+.member-service .icon-right-open {
     color: #ce4827;
 }
+
 /* 유효성 검사 배너 */
-.validation-list {  
+.validation-list {
     margin: 25px 0 0 0;
     padding-left: 0;
     list-style-type: none;
 }
+
 .validation-list a {
-    display: block;   
+    display: block;
     padding: 7px 5px 5px 40px;
-    background:url(./images/validation_icon.png) no-repeat 15px 50%, 
-    linear-gradient(180deg, #ccc 0%, #eee 100%);
+    background: url(./images/validation_icon.png) no-repeat 15px 50%,
+        linear-gradient(180deg, #ccc 0%, #eee 100%);
     border: 1px solid #ccc;
     border-radius: 15px;
     margin-top: 10px;
 }
+
 .validation-list a:hover,
 .validation-list a:focus {
     color: red;
-} 
-/* 웹 관련 용어 */
-.term { 
-    border-radius: 10px;
-    border: #000;
-    background: linear-gradient(180deg, #ccc 0%, #eee 100%);
-    padding: 10px;
-    margin-left: 0;
-    margin-top: 20px;
 }
-.term-heading {
 
+/* 웹 관련 용어 */
+.term{
+  margin-top: 20px;
+  background: #ccc linear-gradient(180deg, #ccc , #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
 }
-.term-list-subject {    
-    color: blue;
-    display: inline-block;
-    font-size: 14px;
-    font
-    padding-bottom: 5px;
+.term-heading{
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
-.term-list-thumbnail {  
-    float: left;
-    margin: 0 10px 10px 10px;
+.term-list{
+  margin: 10px 0 0 0;
 }
-.term-list-brief {  
-    display: block;
-    font-size: 14px;
+.term-list-thumbnail, .term-list-brief{
+  margin-left: 0;
+}
+.term-list-subject, .term-list-brief{
+  width: 145px;
+}
+.term-list-subject{
+  color: #296897;
+  margin-top: -1px;
+}
+.term-list-brief{
+  margin-top: 5px;
+  line-height: 1.5;
+  /* text-align: justify; */
+}
+.term-list > div::after{
+  content: "";
+  display: block;
+  clear: both;
+} 
+.term-list > div{
+  /* overflow: hidden; */
+  margin-top: 10px;
+}
+.term-list img{
+  vertical-align: top;
+}
+.term-list div:nth-child(odd) .term-list-subject, 
+.term-list div:nth-child(odd) .term-list-brief{
+  float: right;
+}
+
+.term-list div:nth-child(odd) .term-list-thumbnail{
+  float: left;
+}
+.term-list div:nth-child(even) .term-list-subject, 
+.term-list div:nth-child(even) .term-list-brief{
+  float: left;
+}
+.term-list div:nth-child(even) .term-list-thumbnail{
+  float: right;
 }
 .slogan {
     background-color: lightgreen;
