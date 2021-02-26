@@ -197,11 +197,13 @@
         <section class='search'>
           <h2 class="a11y-hidden">검색</h2>
           <form method="POST" action="https://formspree.io/seulbinim@gmail.com" class='search-form'>
-            <fieldset>
+            <fieldset class='search-field'>
               <legend>검색 폼</legend>
-              <label for="search-form"><span class='icon-search'></span>자료검색</label>
-              <input type="search" id='search' name='search' required placeholder="검색어를 입력하세요">
-              <button class='btn-search' type="submit">검색</button>
+              <div class="flexbox">
+                <label for="search-form" class='label-search'><span class='icon-search'></span>자료검색</label>
+                <input type="search" id='search' name='search' required placeholder="검색어를 입력하세요">
+                <button class='btn-search' type="submit">검색</button>
+              </div>
             </fieldset>
           </form>
         </section>
