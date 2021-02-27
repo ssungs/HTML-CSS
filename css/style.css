@@ -532,15 +532,10 @@ a {
     padding-top: 45px;
     margin-top: 20px;
 }
-.notice-more, .pds-more {   
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 .notice-list, .notice-more , .pds-list, .pds-more { 
     display: none;
 }
-.tab-act .notice-list, .tab-act .notice-list,
+.tab-act .notice-list, .tab-act .notice-more,
 .tab-act .pds-list, .tab-act .pds-more { 
     display: block;
 }
@@ -549,7 +544,7 @@ a {
     border-radius: 5px 5px 0 0;
     background: #ccc linear-gradient(180deg, #ccc, #eee);
     margin: 0;
-    padding: 10px 15px 8px 0;
+    padding: 10px 15px 8px;
     /* height: 30px; */
     font-size: 1.2rem;
     font-weight: 400;
@@ -585,19 +580,20 @@ a {
 }
 .notice-list a, .pds-list a {   
     /* flex-grow: 1; */
-    width: 300px;
+    width: 310px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 .notice-list time, .pds-list time {   
-    width: auto;
+    /* width: auto; */
+    padding: 10px 5px 10px 10px;
 }
-.notice-more {
+.notice-more, .pds-more {
     padding: 5px;
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 5px;
 }
 .notice-list { 
     list-style-type: none;
@@ -609,25 +605,10 @@ a {
     list-style-type: none;
     line-height: 2.0;
     margin: 0;
-    padding: 5px 0 0 5px;
+    padding: 5px 5px 0 5px;
     font-size: 1.4rem;
     font-weight: 400;
 }
-time {
-    font-size: 1.4rem;
-    font-weight: 400;
-    padding-top: 10px;
-    float: right;
-}
-
-.pds-list {
-    display: none;
-}
-
-.pds-more {
-    display: none;
-}
-
 /* 슬로건 */
 .slogan {
     background-color: lightgreen;
