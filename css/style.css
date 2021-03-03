@@ -623,9 +623,12 @@ a {
     top: 10px;
     right: 5px;
 }
-.notice-more::before, .pds-more::before{
+
+.notice-more::before,
+.pds-more::before {
     color: hsla(110, 30%, 50%, 1);
 }
+
 .notice-list {
     list-style-type: none;
     padding: 0;
@@ -746,7 +749,8 @@ a {
 }
 
 .event-heading,
-.related-heading, .favorite-heading {
+.related-heading,
+.favorite-heading {
     font-size: 1.5rem;
     margin: 0 0 10px 0;
 }
@@ -780,9 +784,10 @@ a {
 .related {
     padding: 10px 0 0 0;
 }
-.related-list { 
+
+.related-list {
     height: 27px;
-    border:1px solid #aaa;
+    border: 1px solid #aaa;
     border-radius: 5px;
     overflow: hidden;
     margin: 0;
@@ -797,37 +802,45 @@ a {
     /* transition-duration: 2s, 1s; */
     /* transition-delay: 0s, 2s; */
 }
+
 .related-list a {
     display: block;
     line-height: 25px;
     text-indent: 2em;
     /* padding: 10px; */
 }
-.related-list a:focus { 
+
+.related-list a:focus {
     outline: 1px solid darkblue;
     outline-offset: -2px;
 }
-.related-list:hover,  .related-list:focus {   
+
+.related-list:hover,
+.related-list:focus {
     height: 147px;
     padding: 10px 0;
 }
+
 /* 인기 사이트 */
-.favorite { 
+.favorite {
     padding-top: 15px;
     margin-top: 20px;
     position: relative;
 }
-.favorite-list {    
+
+.favorite-list {
     margin: 0;
     padding-left: 0;
     list-style-type: none;
 }
+
 .favorite-list li {
     margin: 5px 0;
     display: flex;
     counter-increment: num;
     align-items: center;
-  }
+}
+
 .favorite-list li::before {
     content: counter(num);
     display: inline-block;
@@ -837,9 +850,11 @@ a {
     border-radius: 3px;
     background-color: #aaa;
 }
-.favorite-list a {  
+
+.favorite-list a {
     flex-grow: 1;
 }
+
 .favorite-list .up,
 .favorite-list .down,
 .favorite-list .stop {
@@ -852,28 +867,72 @@ a {
     background: url(./images/rank.png) no-repeat;
 }
 
-.favorite-list .down {   
-    background-position: 0 100%;   
+.favorite-list .down {
+    background-position: 0 100%;
 }
+
 .favorite-list .stop {
     background-position: 0 50%;
 }
-.favorite-more {    
+
+.favorite-more {
     position: absolute;
     top: 9px;
     right: -2px;
     padding: 8px;
 }
-.favorite-more::before {    
+
+.favorite-more::before {
     color: hsla(110, 30%, 50%, 1);
 }
 
 /* 슬로건 */
 .slogan {
-    background-color: lightgreen;
-    height: 10vh;
+    margin: 0;
+    padding: 10px 100px 10px 180px;
+    position: relative;
 }
 
+.slogan-heading {
+    width: 110px;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -25px;
+    left: 35px;
+    margin: 0;
+}
+
+.slogan-heading::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(./images/coffee.png);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    overflow: hidden;
+}
+.slogan-content {
+    font-size: 1.4rem;
+    color: #988674;
+    line-height: 1.5;
+}
+/* .slogan-content q {    
+    quotes: "[[" "]]";
+} */
+.slogan-content q::after {    
+    content: '';
+}
+.slogan-content q::before {
+    font-size: 3.6rem;
+    position: relative;
+    top: 15px;
+}
 .footer {
     background-color: silver;
 }
